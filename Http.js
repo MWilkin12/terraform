@@ -14,7 +14,7 @@ console.log("Starting");
 //Configure our HTTP Server tp respond with Hello World to all requests
 var server = http.createServer(function(request,response) {
 	console.log("Received request: " + request.url);
-	fs.readFile("/Users/mathewwilkin/Documents/webServer/resources" + request.url, function(error, data) {
+	fs.readFile("./resources" + request.url, function(error, data) {
 			if (error) {
 				response.writeHead(404, {"Content-Type": "text/plain"});
 				response.end("Sorry the page was not found");
