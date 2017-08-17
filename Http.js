@@ -1,5 +1,6 @@
 //load the http module to create http server
 var http = require('http');
+var host = "34.201.3.219";
 var port = 22;
 var fs = require("fs");
 
@@ -13,7 +14,7 @@ console.log("Starting");
 //Configure our HTTP Server tp respond with Hello World to all requests
 var server = http.createServer(function(request,response) {
 	console.log("Received request: " + request.url);
-	fs.readFile("./public" + request.url, function(error, data) {
+	fs.readFile("/Users/mathewwilkin/Documents/webServer/resources" + request.url, function(error, data) {
 			if (error) {
 				response.writeHead(404, {"Content-Type": "text/plain"});
 				response.end("Sorry the page was not found");
