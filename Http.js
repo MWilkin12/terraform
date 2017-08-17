@@ -1,7 +1,6 @@
 //load the http module to create http server
 var http = require('http');
-var host = "34.201.3.219";
-var port = 1444;
+var port = 22;
 var fs = require("fs");
 
 console.log("Starting");
@@ -29,4 +28,4 @@ var server = http.createServer(function(request,response) {
 //Listen on port (N), IP defaults to 127.0.0.1
 	server.listen(port);
 //Put a friendly message on the terminal
-	console.log("Listening on port: " + port + " on Host: " + host)
+	console.log("Listening on port: " + port)
