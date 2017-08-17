@@ -1,7 +1,7 @@
 //load the http module to create http server
 var http = require('http');
 var host = "34.201.3.219";
-var port = 22;
+var port = 1000;
 var fs = require("fs");
 
 console.log("Starting");
